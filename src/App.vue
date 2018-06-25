@@ -35,7 +35,7 @@
     name: 'app',
     data() {
       return {
-        msg: 'Test task',
+        msg: 'Тестовое задание "Текстовые блоки"',
         listOfBlocks: [],
         currentId: 0
       }
