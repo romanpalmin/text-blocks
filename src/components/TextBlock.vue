@@ -11,7 +11,8 @@
         </template>
         <template v-else>
           <div class="close-button warning">Вы уверены?
-            <button class="warning-ok-btn warning-color" @click.stop="$emit('deleteBlock', id);showWarning=false">Да</button>
+            <button class="warning-ok-btn warning-color" @click.stop="$emit('deleteBlock', id);showWarning=false">Да
+            </button>
             <button class="warning-cancel-btn warning-color" @click.stop="showWarning=false">Нет</button>
           </div>
         </template>
@@ -21,7 +22,9 @@
       </template>
       <legend>{{typeTitle}}</legend>
       <div class="inner-div" :id="id">
-        <div><random-text /></div>
+        <div>
+          <random-text/>
+        </div>
       </div>
 
     </fieldset>
@@ -29,7 +32,14 @@
 </template>
 
 <script>
+  /**
+   * Компонент - View - отображающий текстовый блок по заданным параметрам
+   *
+   * 25.06.2018 rpalmin
+   */
+
   import random from './RandomContent.vue';
+
   export default {
     name: 'textBlock',
     data() {
@@ -60,7 +70,6 @@
         this.$emit('toggleSelected', this.id);
       },
       toggleColor() {
-        console.log('Change color');
         this.isGreen = !this.isGreen;
         this.$emit('toggleColor', this.id);
       },
@@ -124,13 +133,16 @@
     padding: 5px;
     cursor: pointer;
   }
-  .warning-ok-btn{
+
+  .warning-ok-btn {
     background-color: green;
   }
-  .warning-cancel-btn{
+
+  .warning-cancel-btn {
     background-color: red;
   }
-  .warning-color{
+
+  .warning-color {
     color: white;
   }
 </style>

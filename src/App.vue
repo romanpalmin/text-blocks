@@ -27,6 +27,10 @@
 </template>
 
 <script>
+  /**
+   * Основной файл приложения
+   */
+
   import controls from './components/Сontrols.vue';
   import stats from './components/Stats.vue';
   import block from './components/TextBlock.vue';
@@ -71,7 +75,6 @@
             selected: false,
             isGreen: true
           });
-        //console.log(window.getElementById(this.currentId-1));
       },
       deleteCurrentBlock(id) {
         this.listOfBlocks = this.listOfBlocks.filter(item => item.id !== id);

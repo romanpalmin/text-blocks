@@ -17,6 +17,12 @@
 </template>
 
 <script>
+  /**
+   * Компонент, отображающий статистику состояния приложения
+   *
+   * 25.06.2018 rpalmin
+   */
+
   export default {
     name: 'Statistics',
     data() {
