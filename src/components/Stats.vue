@@ -7,22 +7,10 @@
         <div>Всего блоков: {{allBlocksCount}}</div>
         <div>Выделенных блоков: {{allSelected}}</div>
       </div>
-      <!--<div class="floater simple">
-        <div>Всего простых блоков:</div>
-        <div>Выбранных простых: </div>
-      </div>-->
       <div class="floater green">
-        <div>Ввыделено зеленых: {{selectedGreen}}</div>
+        <div>Выделено зеленых: {{selectedGreen}}</div>
         <div>Выделено красных: {{selectedRed}}</div>
       </div>
-     <!-- <div class="floater green">
-        <div>Итого зеленых: {{allGreen}}</div>
-        <div>Выбранных зеленых: {{selectedGreen}}</div>
-      </div>
-      <div class="floater red">
-        <div>Итого красных: {{allRed}}</div>
-        <div>Выбранных красных: {{selectedRed}}</div>
-      </div>-->
     </div>
 
   </div>
