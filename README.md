@@ -34,7 +34,7 @@
 
 Пример реализации
 ------
-http://dev.romanpalmin.com/samples/
+http://dev.romanpalmin.com/samples/TextBlocks/
 
 ## Build Setup
 
